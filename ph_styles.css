@@ -1,0 +1,128 @@
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 1
+   
+   PHCT Typographic Style Sheet
+   Author: 
+   Date:   
+   
+   Filename: ph_styles.css
+
+*/
+@charset "uft-8";
+/*Charset inside of CSS*/
+@font-face{
+   font-family: Champagne;
+   src: url(cac_champagne.ttf) format('ttf'),
+   url(cac_champagne.woff) format('woff'),
+   url(cac_champagne.woff2) format('woff2');
+}
+@font-face{
+   font-family: Dobkin;
+   src: url(dobkinplain.ttf) format('ttf'),
+   url(DobkinPlain.woff) format('woff'),
+   url(dobkinplain.woff2) format('woff2');
+}
+@font-face{
+   font-family: Grunge;
+   src: url(1942.ttf) format('ttf'),
+   url(1942.woff) format('woff'),
+   url(1942.woff2) format('woff2');
+}
+/*Setting font-family:*/
+
+/* Structural Styles */
+
+html{
+   background-color: hsl(91, 8%, 56%);
+}
+body{
+   background-color: hsl(58, 31%, 84%);
+}
+body > p{
+   font-size:1.1em;
+   text-align: center;
+}
+header{
+   background-color: black;
+}
+/*Setting Background Color*/
+p{
+   margin: 0px;
+   padding-top: 5px;
+   padding-bottom: 25px;
+   padding-right: 25px;
+   padding-left: 25px;
+}
+
+/*Padding*/
+
+/* Navigation Styles */
+
+nav a {
+   font-family: "'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif'";
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+nav a:link, nav a:visited{
+   color:white;
+   text-decoration: none; 
+   background-color: hsla(0, 0%, 42%, 0.4);
+}
+nav a:hover{
+   color:hsl(0, 0%, 100%, 0.70);
+   background-color:hsla(0, 0%, 42%, 0.7);
+}
+/*Setting the font-family: and padding for every navigation bar*/
+
+
+/* Section Styles */
+
+section.playbill h1{
+   font-size: 3em;
+   font-weight: normal;
+   margin: 0px;
+   padding-top: 20px;
+   padding-right: 0px;
+   padding-bottom: 10px;
+   padding-left: 20px;
+}
+section#play1{
+   background-color:hsl(240, 100%, 88%);
+}
+section#play1 h1{
+   font-family: Champagne, cursive;
+}
+section#play2{
+   background-color:hsl(25,88%,73%);
+}
+section#play2 h1{
+   font-family: Grunge, 'Times New Roman', Times, serif;
+}
+section#play3{
+   background-color:hsl(0, 100%, 75%);
+}
+section#play3 h1{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+section#play4{
+   background-color:hsl(296, 86%, 86%);
+}
+section#play4 h1{
+   font-family: Dobkin, cursive;
+}
+
+
+/* Description List Styles */
+
+dt{
+   font-size: 1.3em;
+   font-weight: bold;
+   color: hsla(0, 0%, 0%, 0.4);
+}
+dd{
+   font-size: 1.3em;
+   margin-left: 0px;
+   margin-bottom: 10px;
+}
